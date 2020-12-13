@@ -1,12 +1,20 @@
 package com.rajan.redirectservice.redirect;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.UniqueConstraint;
 import java.util.Objects;
 
 @Entity
 public class URLData {
+    @Id
     private Long id;
+
+    @Column(unique = true)
     private String longUrl;
+
+    @Column(unique=true)
     private String shortUrl;
 
 

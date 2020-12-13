@@ -1,12 +1,13 @@
 package com.rajan.redirectservice.redirect;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface URLDataRepository extends JpaRepository<URLData, Long> {
+import javax.persistence.EntityManagerFactory;
+import java.net.URL;
 
-//    public String getByShortUrl(String shortUrl){
-//
-//    }
+@Repository
+public interface URLDataRepository extends JpaRepository<URLData, Long>, URLDataRepositoryCustom<URLData, Long> {
+    public URLData getByShortUrl(String shortUrl);
 }
