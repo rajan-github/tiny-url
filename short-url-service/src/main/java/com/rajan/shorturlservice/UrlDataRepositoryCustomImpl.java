@@ -1,4 +1,4 @@
-package com.rajan.redirectservice.redirect;
+package com.rajan.shorturlservice;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -27,3 +27,4 @@ public class UrlDataRepositoryCustomImpl implements URLDataRepositoryCustom<URLD
         }
     }
 }
+

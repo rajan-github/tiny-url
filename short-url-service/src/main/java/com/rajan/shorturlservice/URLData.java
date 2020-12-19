@@ -1,4 +1,4 @@
-package com.rajan.redirectservice.redirect;
+package com.rajan.shorturlservice;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -56,3 +56,4 @@ public class URLData {
         return Objects.hash(id, longUrl, shortUrl);
     }
 }
+
